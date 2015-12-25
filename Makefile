@@ -39,3 +39,6 @@ clean:
 test:
 	$(CC) core.c util.c tests.c -o $(TESTS) $(CFLAGS)
 	valgrind --track-origins=yes ./$(TESTS)
+
+travis:
+	$(CC) core.c util.c tests.c -o $(TESTS) $(CFLAGS)
