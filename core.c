@@ -57,7 +57,6 @@ Expr* read_string(char* str) {
   //int start;
   int index;
   Expr* ret  = malloc(sizeof(Expr));     // return value
-  // FIXME this is a memory leak
 
   check('\0' != str[0],
       "String to read_string terminated unexpectedly");
